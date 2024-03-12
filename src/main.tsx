@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.tsx";
+import "@fontsource/fredoka-one";
 import "./index.css";
 import {
   Route,
@@ -8,9 +8,10 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
 } from "react-router-dom";
+import { Home } from "./pages/Home.tsx";
 
 const router = createBrowserRouter(
-  createRoutesFromElements(<Route path="/" element={<App />} />)
+  createRoutesFromElements(<Route path="/" element={<Home />} />)
 );
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
