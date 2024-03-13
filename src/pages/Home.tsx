@@ -1,3 +1,4 @@
+import { BookingSection } from '../components/Booking';
 import { Header } from '../components/Header';
 import { Hero } from '../components/Hero';
 import { ProductsList } from '../components/ProductsList';
@@ -10,6 +11,7 @@ export function Home() {
 			<Hero />
 			<ProductsList />
 			<Welcome />
+			<BookingSection />
 		</div>
 	);
 }

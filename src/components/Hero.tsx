@@ -1,6 +1,6 @@
 import Line from '../assets/line.svg';
 import Dog from '../assets/dog.png';
-import Arrow from '../assets/arrow-right.png';
+import CustomButton from '../shared/Button';
 
 export function Hero() {
 	return (
@@ -23,10 +23,7 @@ export function Hero() {
 						We are a team of pet lovers who are dedicated to ensuring that your pets are happy and
 						healthy. We offer a range of services to cater to your pet's needs.
 					</p>
-					<button className="bg-light-red font-readex mt-6 flex h-[52px] w-[210px] items-center justify-center rounded-full px-6 py-2 text-base text-white">
-						Make a Call
-						<img src={Arrow} alt="arrow" className="ml-2" />
-					</button>
+					<CustomButton text="Make a Call" />
 				</article>
 			</div>
 		</section>
