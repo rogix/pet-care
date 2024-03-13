@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'sans': [ 'Fredoka One', 'system-ui']
+        'sans': [ 'Fredoka One', 'system-ui'],
+        'readex': ['Readex Pro', 'sans-serif'],
       },
       colors: {
         'white': '#FFFFFF',
