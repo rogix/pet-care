@@ -1,7 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import '@fontsource/fredoka-one';
-import '@fontsource/readex-pro';
+// import '@fontsource/readex-pro';
+import '@fontsource/readex-pro/200.css';
+import '@fontsource/readex-pro/300.css';
+import '@fontsource/readex-pro/400.css';
 import './index.css';
 import {
 	Route,
