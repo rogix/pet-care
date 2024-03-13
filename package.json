@@ -13,6 +13,7 @@
     "@fontsource-variable/readex-pro": "^5.0.12",
     "@fontsource/fredoka-one": "^5.0.5",
     "@fontsource/readex-pro": "^5.0.12",
+    "@heroicons/react": "^2.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.3"
@@ -24,6 +25,7 @@
     "@typescript-eslint/parser": "^7.1.1",
     "@vitejs/plugin-react-swc": "^3.5.0",
     "autoprefixer": "^10.4.18",
+    "daisyui": "^4.7.3",
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",

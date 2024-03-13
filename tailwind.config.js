@@ -20,7 +20,10 @@ export default {
         'orange': '#FF9315',
         'light-red': '#F27C86',
       },
-    },
+    },  
   },
-  plugins: [],
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: [false],
+  },
 }
