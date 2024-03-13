@@ -3,8 +3,14 @@ import DogCat from '../assets/dog-cat.png';
 import DCIcon1 from '../assets/dc-icon-1.png';
 import DCIcon2 from '../assets/dc-icon-2.png';
 import DCIcon3 from '../assets/dc-icon-3.png';
+import CountUp from 'react-countup';
+import { useInView } from 'react-intersection-observer';
 
 export function Welcome() {
+	const { ref, inView } = useInView({
+		triggerOnce: true // Change this to false if you want the animation to trigger again whenever it comes in view
+	});
+
 	return (
 		<section className="container mx-auto flex justify-between gap-10">
 			<div className="mb-10 mt-10 flex w-[40%] flex-col gap-7">
@@ -39,7 +45,7 @@ export function Welcome() {
 				<img
 					src={DogCat}
 					alt="dog-cat"
-					className="absolute bottom-0 left-1/2 h-auto -translate-x-1/2 transform"
+					className="absolute bottom-0 left-1/2 z-0 h-auto -translate-x-1/2 transform"
 				/>
 				<img src={DCIcon1} alt="dc-icon-1" className="absolute -left-5 bottom-60" />
 				<img
@@ -49,6 +55,40 @@ export function Welcome() {
 				/>
 				<img src={DCIcon3} alt="dc-icon-3" className="absolute bottom-32 right-0" />
 				<span className="bg-light-red absolute right-36 top-40 -z-10 h-[400px] w-[400px] rounded-full" />
+				<article
+					ref={ref}
+					className="border-teal text-dark-gray absolute -left-10 bottom-20 z-20 flex h-[115px] w-[270px] flex-col items-center justify-center gap-2 rounded-lg border-t-4 bg-white p-5 text-center shadow-lg"
+				>
+					<h2 className="text-teal text-5xl">
+						<CountUp start={0} end={24} delay={0.5} duration={1.5}>
+							{({ countUpRef, start }) => {
+								if (inView) {
+									start();
+								}
+								return <span ref={countUpRef} />;
+							}}
+						</CountUp>
+						+
+					</h2>
+					<p className="text-base">Trusted Partners</p>
+				</article>
+				<article
+					ref={ref}
+					className="border-gold text-dark-gray absolute right-0 top-52 z-20 flex h-[115px] w-[270px] flex-col items-center justify-center gap-2 rounded-lg border-t-4 bg-white p-5 text-center shadow-lg"
+				>
+					<h2 className="text-gold text-5xl">
+						<CountUp start={0} end={129} delay={0.5} duration={1.5}>
+							{({ countUpRef, start }) => {
+								if (inView) {
+									start();
+								}
+								return <span ref={countUpRef} />;
+							}}
+						</CountUp>
+						k
+					</h2>
+					<p className="text-base">Experience Field</p>
+				</article>
 			</div>
 		</section>
 	);
