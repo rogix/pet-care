@@ -12,7 +12,7 @@ export function Welcome() {
 	});
 
 	return (
-		<section className="container mx-auto flex justify-between gap-10">
+		<section className="container flex justify-between gap-10">
 			<div className="mb-10 mt-10 flex w-[40%] flex-col gap-7">
 				<article className="flex flex-col gap-7">
 					<h2 className="text-teal font-readex">Welcome to Buddy Pet Care</h2>

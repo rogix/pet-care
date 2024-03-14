@@ -8,7 +8,7 @@ import TrainingIcon from '../assets/training-icon.png';
 
 export function ServicesSection() {
 	return (
-		<section className="container mx-auto my-20">
+		<section className="container my-20">
 			<div className="mx-auto my-20 flex max-w-[815px] flex-col items-center justify-center gap-5">
 				<h2 className="font-readex text-teal font-bold">Pet Care Services</h2>
 				<h3 className="text-dark-gray text-center text-5xl leading-normal">

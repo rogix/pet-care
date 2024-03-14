@@ -8,7 +8,7 @@ import Sara from '../assets/sara.jpeg';
 export function Testimonials() {
 	return (
 		<section className="h-screen">
-			<div className="container relative mx-auto flex h-full items-center justify-between">
+			<div className="container relative flex h-full items-center justify-between">
 				<div className="flex w-2/4 max-w-[600px] flex-col gap-5">
 					<h2 className="text-teal">Glowing Coats & Wagging Tails</h2>
 					<h3 className="text-dark-gray text-5xl">Grooming Testimonials That Speak Volumes</h3>
