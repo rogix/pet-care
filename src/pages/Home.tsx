@@ -3,6 +3,7 @@ import { Header } from '../components/Header';
 import { Hero } from '../components/Hero';
 import { ProductsList } from '../components/ProductsList';
 import { ServicesSection } from '../components/Services';
+import { Testimonials } from '../components/Testimonials';
 import { Welcome } from '../components/Welcome';
 
 export function Home() {
@@ -14,6 +15,7 @@ export function Home() {
 			<Welcome />
 			<BookingSection />
 			<ServicesSection />
+			<Testimonials />
 		</div>
 	);
 }
