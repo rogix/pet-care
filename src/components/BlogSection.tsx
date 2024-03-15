@@ -15,7 +15,7 @@ export function BlogSection() {
 					Exploring the Latest Trends in Pet lovers
 				</Typography>
 			</div>
-			<section className="grid grid-cols-3 gap-10">
+			<section className="grid grid-cols-1  gap-10 md:grid-cols-3">
 				<article className="rounded-md bg-off-white">
 					<div>
 						<img src={Blog1} alt="Blog post" className="rounded-t-md" />

@@ -4,9 +4,9 @@ import CustomButton from '../shared/Button';
 
 export function Hero() {
 	return (
-		<section className="bg-off-white flex h-[calc(100vh-112px)] items-center">
+		<section className="flex h-[calc(100vh-112px)] items-center bg-off-white">
 			<div className="mx-auto flex w-[1200px] items-center gap-10">
-				<div className="relative w-[600px]">
+				<div className="relative hidden w-[600px] lg:block">
 					<img src={Line} alt="hero" className="relative h-auto w-full object-contain" />
 					<img
 						src={Dog}
@@ -14,12 +14,12 @@ export function Hero() {
 						className="absolute left-10 top-10 h-auto w-[90%] object-contain"
 					/>
 				</div>
-				<article className="flex h-[440px] flex-col justify-center">
-					<h2 className="text-teal font-readex text-lg font-bold">Happy Pets, Happy Hearts</h2>
-					<div className="text-dark-gray mb-6 w-[590px] text-left text-7xl font-bold capitalize leading-relaxed">
+				<article className="flex h-[440px] flex-col justify-center p-5 md:p-0">
+					<h2 className="font-readex text-lg font-bold text-teal">Happy Pets, Happy Hearts</h2>
+					<div className="mb-6 text-left text-4xl font-bold capitalize leading-relaxed text-dark-gray md:w-[590px] md:text-7xl">
 						Loving <span className="text-orange">pet caring</span> partners
 					</div>
-					<p className="text-gray font-readex max-w-96 text-sm">
+					<p className="max-w-96 font-readex text-sm text-gray">
 						We are a team of pet lovers who are dedicated to ensuring that your pets are happy and
 						healthy. We offer a range of services to cater to your pet's needs.
 					</p>

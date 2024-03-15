@@ -16,7 +16,7 @@ export function ServicesSection() {
 				</h3>
 			</div>
 
-			<section className="grid grid-cols-3 gap-10">
+			<section className="grid grid-cols-1 gap-10 md:grid-cols-3">
 				<Card
 					image={HealthIcon}
 					altText="health"

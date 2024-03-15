@@ -5,8 +5,8 @@ import SafeIcon from '../assets/safe-and-love-icon.png';
 
 export function ProductsList() {
 	return (
-		<section className="container my-20 grid grid-cols-4 gap-7">
-			<article className="border-teal text-dark-gray flex flex-col items-center justify-center gap-5 rounded-lg border-t-4 p-5 text-center shadow-lg">
+		<section className="container my-20 grid grid-cols-1  gap-7 md:grid-cols-4">
+			<article className="flex flex-col items-center justify-center gap-5 rounded-lg border-t-4 border-teal p-5 text-center text-dark-gray shadow-lg">
 				<img src={CertifiedIcon} alt="certified" />
 				<h2 className="text-2xl">Certified Professionals</h2>
 				<p className="font-readex text-base font-extralight">
@@ -14,21 +14,21 @@ export function ProductsList() {
 					pets.
 				</p>
 			</article>
-			<article className="border-orange text-dark-gray flex flex-col items-center justify-center gap-5 rounded-lg border-t-4 p-5 text-center shadow-lg">
+			<article className="flex flex-col items-center justify-center gap-5 rounded-lg border-t-4 border-orange p-5 text-center text-dark-gray shadow-lg">
 				<img src={CustomizedIcon} alt="customized" />
 				<h2 className="text-2xl">Customized Care</h2>
 				<p className="font-readex text-base font-extralight">
 					We offer customized care for your pets, ensuring that their unique needs are met.
 				</p>
 			</article>
-			<article className="border-light-red text-dark-gray flex flex-col items-center justify-center gap-5 rounded-lg border-t-4 p-5 text-center shadow-lg">
+			<article className="flex flex-col items-center justify-center gap-5 rounded-lg border-t-4 border-light-red p-5 text-center text-dark-gray shadow-lg">
 				<img src={VetIcon} alt="vet" />
 				<h2 className="text-2xl">Vet-Recommended</h2>
 				<p className="font-readex text-base font-extralight">
 					Our services are recommended by vets, ensuring that your pets are in good hands.
 				</p>
 			</article>
-			<article className="border-gold text-dark-gray flex flex-col items-center justify-center gap-5 rounded-lg border-t-4 p-5 text-center shadow-lg">
+			<article className="flex flex-col items-center justify-center gap-5 rounded-lg border-t-4 border-gold p-5 text-center text-dark-gray shadow-lg">
 				<img src={SafeIcon} alt="safe" />
 				<h2 className="text-2xl">Safe & Loving</h2>
 				<p className="font-readex text-base font-extralight">

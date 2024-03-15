@@ -8,17 +8,17 @@ import Sara from '../assets/sara.jpeg';
 export function Testimonials() {
 	return (
 		<section className="h-screen">
-			<div className="container relative flex h-full items-center justify-between">
-				<div className="flex w-2/4 max-w-[600px] flex-col gap-5">
+			<div className="container relative flex h-full flex-col items-center justify-between md:flex-row">
+				<div className="flex w-full max-w-[600px] flex-col gap-5 md:w-2/4">
 					<h2 className="text-teal">Glowing Coats & Wagging Tails</h2>
-					<h3 className="text-dark-gray text-5xl">Grooming Testimonials That Speak Volumes</h3>
+					<h3 className="text-5xl text-dark-gray">Grooming Testimonials That Speak Volumes</h3>
 					<p className="font-readex text-base">
 						We have been taking our dog to Pet Grooming for the past year. We are always very happy
 						with the results and the friendly service. I highly recommend Pet Grooming to anyone
 						looking for a professional groomer.
 					</p>
-					<section className="h-320 border-gold flex w-[600px] flex-col gap-5 rounded-md border-2 p-10 text-center">
-						<div className="font-readex text-gray text-2xl">
+					<section className="h-320 flex w-full flex-col gap-5 rounded-md border-2 border-gold p-10 text-center md:w-[600px]">
+						<div className="font-readex text-2xl text-gray">
 							"I'm so grateful to Buddy for taking exceptional care of my furry friend. Their team's
 							dedication and expertise ensure my pet is always in safe hands."
 						</div>
@@ -31,7 +31,7 @@ export function Testimonials() {
 						</div>
 					</section>
 				</div>
-				<div className="relative h-[700px] w-2/4">
+				<div className="relative hidden h-[700px] w-2/4 lg:block">
 					<img src={Shadow} alt="" className="absolute z-0" />
 					<img src={ManDogs} alt="" className="absolute z-10" />
 					<img src={LineTestimonials} alt="line" className="absolute z-20" />

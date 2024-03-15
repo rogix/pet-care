@@ -4,7 +4,7 @@ import { Typography } from '../shared/Typography';
 export function Questions() {
 	return (
 		<section className="bg-teal">
-			<div className="container relative flex h-full gap-20">
+			<div className="container relative flex h-full max-w-[1440px] flex-col gap-20 lg:flex-row">
 				<div className="my-[104px] flex flex-col gap-5 text-white">
 					<Typography variant="h2" className="text-gold">
 						FAQs
@@ -34,11 +34,11 @@ export function Questions() {
 						name="my-accordion-3"
 					/>
 				</div>
-				<div className="relative right-0 top-32 h-[607px] w-[570px] rounded-t-lg bg-orange">
+				<div className="relative right-0 top-32 h-[607px] rounded-t-lg bg-orange md:w-[570px]">
 					<h2 className="mx-auto max-w-[400px] py-10 text-center text-2xl text-white">
 						Have a question? Ask contact support now.
 					</h2>
-					<form className="flex w-[570px] flex-col gap-5 p-10 pt-0">
+					<form className="flex flex-col gap-5 p-10 pt-0 md:w-[570px]">
 						<input type="text" placeholder="Name" className="w-full rounded-full px-5 py-5" />
 						<input type="email" placeholder="Email" className="w-full rounded-full p-5 px-5" />
 						<textarea placeholder="Any Question" rows={6} className="rounded-[30px] p-5" />

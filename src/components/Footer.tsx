@@ -4,7 +4,7 @@ import ArrowIcon from '../assets/arrow.svg';
 export function Footer() {
 	return (
 		<section className="bg-off-white py-20">
-			<footer className="container grid grid-cols-4">
+			<footer className="container grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
 				<div>
 					<img src={Logo} alt="Logo" />
 				</div>

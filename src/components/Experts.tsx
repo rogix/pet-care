@@ -19,7 +19,7 @@ export function Experts() {
 					Committed to Nurturing Animal Happiness
 				</Typography>
 			</div>
-			<section className="grid grid-cols-4 gap-5">
+			<section className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
 				<div>
 					<img src={Expert1} alt="expert-1" />
 					<Typography variant="h3" className="mt-5 text-center text-xl">

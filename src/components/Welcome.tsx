@@ -13,7 +13,7 @@ export function Welcome() {
 
 	return (
 		<section className="container flex justify-between gap-10">
-			<div className="mb-20 mt-40 flex w-[40%] flex-col gap-7">
+			<div className="mb-20 mt-40 flex flex-col gap-7 lg:w-[40%]">
 				<article className="flex flex-col gap-7">
 					<h2 className="font-readex text-teal">Welcome to Buddy Pet Care</h2>
 					<h3 className="text-5xl text-dark-gray">Your Trusted Partner in Pet Wellness</h3>
@@ -41,7 +41,7 @@ export function Welcome() {
 					/>
 				</div>
 			</div>
-			<div className="relative w-[50%]">
+			<div className="relative hidden w-[50%] lg:block">
 				<img
 					src={DogCat}
 					alt="dog-cat"
