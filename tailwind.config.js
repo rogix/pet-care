@@ -23,13 +23,13 @@ export default {
     },  
     container: {
       center: true,
-      padding: {
-        DEFAULT: '1rem',
-        sm: '2rem',
-        lg: '128px',
-        xl: '5rem',
-        '2xl': '8rem',
-      },
+      // padding: {
+      //   DEFAULT: '1rem',
+      //   sm: '2rem',
+      //   lg: '128px',
+      //   xl: '5rem',
+      //   '2xl': '8rem',
+      // },
     },
   },
   plugins: [require("daisyui")],

@@ -7,7 +7,7 @@ import { Typography } from '../shared/Typography';
 
 export function Feline() {
 	return (
-		<section className="container my-20">
+		<section className="container my-60">
 			<div className="flex h-full gap-10">
 				<div className="mt-10 w-1/5 pr-10">
 					<Typography variant="h3" className="text-base text-dark-gray">
@@ -24,7 +24,7 @@ export function Feline() {
 					<img src={CatBath} alt="cat-bath" className="absolute" />
 					<img src={CatBubble} alt="cat-bubble" className="absolute -left-10 bottom-0 z-10" />
 					<img src={CatIcons} alt="cat-icons" className="absolute -top-28 right-40 z-10" />
-					<img src={CatLine} alt="cat-line" className="absolute -top-3" />
+					<img src={CatLine} alt="cat-line" className="absolute -top-16" />
 				</div>
 				<div className="flex w-2/5 flex-col gap-4">
 					<Typography variant="h2">Perfect Plans</Typography>

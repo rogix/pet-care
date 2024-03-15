@@ -10,13 +10,13 @@ export function ServicesSection() {
 	return (
 		<section className="container my-20">
 			<div className="mx-auto my-20 flex max-w-[815px] flex-col items-center justify-center gap-5">
-				<h2 className="font-readex text-teal font-bold">Pet Care Services</h2>
-				<h3 className="text-dark-gray text-center text-5xl leading-normal">
+				<h2 className="font-readex font-bold text-teal">Pet Care Services</h2>
+				<h3 className="text-center text-5xl leading-normal text-dark-gray">
 					Indulgent Spa Treatments Tailored for Pets
 				</h3>
 			</div>
 
-			<section className="grid grid-cols-3 gap-5">
+			<section className="grid grid-cols-3 gap-10">
 				<Card
 					image={HealthIcon}
 					altText="health"

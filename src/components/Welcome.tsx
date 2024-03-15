@@ -13,7 +13,7 @@ export function Welcome() {
 
 	return (
 		<section className="container flex justify-between gap-10">
-			<div className="mb-10 mt-10 flex w-[40%] flex-col gap-7">
+			<div className="mb-20 mt-40 flex w-[40%] flex-col gap-7">
 				<article className="flex flex-col gap-7">
 					<h2 className="font-readex text-teal">Welcome to Buddy Pet Care</h2>
 					<h3 className="text-5xl text-dark-gray">Your Trusted Partner in Pet Wellness</h3>
@@ -54,7 +54,7 @@ export function Welcome() {
 					className="absolute left-1/2 top-10 -translate-x-3/4 transform"
 				/>
 				<img src={DCIcon3} alt="dc-icon-3" className="absolute bottom-32 right-0" />
-				<span className="absolute right-36 top-40 -z-10 h-[400px] w-[400px] rounded-full bg-light-red" />
+				<span className="absolute right-64 top-40 -z-10 h-[400px] w-[400px] rounded-full bg-light-red" />
 				<article
 					ref={ref}
 					className="absolute -left-10 bottom-20 z-20 flex h-[115px] w-[270px] flex-col items-center justify-center gap-2 rounded-lg border-t-4 border-teal bg-white p-5 text-center text-dark-gray shadow-lg"

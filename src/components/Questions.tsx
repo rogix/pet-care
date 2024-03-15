@@ -5,7 +5,7 @@ export function Questions() {
 	return (
 		<section className="bg-teal">
 			<div className="container relative flex h-full gap-20">
-				<div className="my-20 flex flex-col gap-5 text-white">
+				<div className="my-[104px] flex flex-col gap-5 text-white">
 					<Typography variant="h2" className="text-gold">
 						FAQs
 					</Typography>

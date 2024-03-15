@@ -12,10 +12,10 @@ export function Experts() {
 	return (
 		<section className="container py-28">
 			<div className="mx-auto max-w-[800px]">
-				<Typography variant="h2" className="mb-10 text-center">
+				<Typography variant="h2" className="mb-10 text-center text-teal">
 					Meet Our Experts
 				</Typography>
-				<Typography variant="h3" className="mb-10 text-center">
+				<Typography variant="h3" className="mb-10 text-center text-5xl text-dark-gray">
 					Committed to Nurturing Animal Happiness
 				</Typography>
 			</div>
