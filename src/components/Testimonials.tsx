@@ -7,15 +7,14 @@ import Sara from '../assets/sara.jpeg';
 
 export function Testimonials() {
 	return (
-		<section className="h-screen">
+		<section className="mb-10 lg:h-screen">
 			<div className="container relative flex h-full flex-col items-center justify-between md:flex-row">
 				<div className="flex w-full max-w-[600px] flex-col gap-5 md:w-2/4">
 					<h2 className="text-teal">Glowing Coats & Wagging Tails</h2>
 					<h3 className="text-5xl text-dark-gray">Grooming Testimonials That Speak Volumes</h3>
-					<p className="font-readex text-base">
-						We have been taking our dog to Pet Grooming for the past year. We are always very happy
-						with the results and the friendly service. I highly recommend Pet Grooming to anyone
-						looking for a professional groomer.
+					<p className="font-readex text-base text-gray">
+						Our clients are our biggest supporters. Would you like to know what they think about us?
+						Take a look at the testimonials below to find out what our clients are saying about us.
 					</p>
 					<section className="h-320 flex w-full flex-col gap-5 rounded-md border-2 border-gold p-10 text-center md:w-[600px]">
 						<div className="font-readex text-2xl text-gray">
