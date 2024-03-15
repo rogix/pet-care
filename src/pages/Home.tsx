@@ -2,6 +2,7 @@ import { BlogSection } from '../components/BlogSection';
 import { BookingSection } from '../components/Booking';
 import { Experts } from '../components/Experts';
 import { Feline } from '../components/Feline';
+import { Footer } from '../components/Footer';
 import { Header } from '../components/Header';
 import { Hero } from '../components/Hero';
 import { Numbers } from '../components/Numbers';
@@ -26,6 +27,7 @@ export function Home() {
 			<Feline />
 			<Questions />
 			<BlogSection />
+			<Footer />
 		</div>
 	);
 }
