@@ -1,3 +1,4 @@
+import { BlogSection } from '../components/BlogSection';
 import { BookingSection } from '../components/Booking';
 import { Experts } from '../components/Experts';
 import { Feline } from '../components/Feline';
@@ -24,6 +25,7 @@ export function Home() {
 			<Experts />
 			<Feline />
 			<Questions />
+			<BlogSection />
 		</div>
 	);
 }
