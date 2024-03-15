@@ -1,4 +1,6 @@
 import { BookingSection } from '../components/Booking';
+import { Experts } from '../components/Experts';
+import { Feline } from '../components/Feline';
 import { Header } from '../components/Header';
 import { Hero } from '../components/Hero';
 import { Numbers } from '../components/Numbers';
@@ -18,6 +20,8 @@ export function Home() {
 			<ServicesSection />
 			<Testimonials />
 			<Numbers />
+			<Experts />
+			<Feline />
 		</div>
 	);
 }
