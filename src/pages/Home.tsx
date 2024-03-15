@@ -1,6 +1,7 @@
 import { BookingSection } from '../components/Booking';
 import { Header } from '../components/Header';
 import { Hero } from '../components/Hero';
+import { Numbers } from '../components/Numbers';
 import { ProductsList } from '../components/ProductsList';
 import { ServicesSection } from '../components/Services';
 import { Testimonials } from '../components/Testimonials';
@@ -16,6 +17,7 @@ export function Home() {
 			<BookingSection />
 			<ServicesSection />
 			<Testimonials />
+			<Numbers />
 		</div>
 	);
 }

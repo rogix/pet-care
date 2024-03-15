@@ -8,15 +8,15 @@ import { useInView } from 'react-intersection-observer';
 
 export function Welcome() {
 	const { ref, inView } = useInView({
-		triggerOnce: true // Change this to false if you want the animation to trigger again whenever it comes in view
+		triggerOnce: true
 	});
 
 	return (
 		<section className="container flex justify-between gap-10">
 			<div className="mb-10 mt-10 flex w-[40%] flex-col gap-7">
 				<article className="flex flex-col gap-7">
-					<h2 className="text-teal font-readex">Welcome to Buddy Pet Care</h2>
-					<h3 className="text-dark-gray text-5xl">Your Trusted Partner in Pet Wellness</h3>
+					<h2 className="font-readex text-teal">Welcome to Buddy Pet Care</h2>
+					<h3 className="text-5xl text-dark-gray">Your Trusted Partner in Pet Wellness</h3>
 					<p className="font-readex font-extralight">
 						We are a team of pet lovers who are dedicated to ensuring that your pets are happy and
 						healthy. We offer a range of services to cater to your pet's needs.
@@ -54,12 +54,12 @@ export function Welcome() {
 					className="absolute left-1/2 top-10 -translate-x-3/4 transform"
 				/>
 				<img src={DCIcon3} alt="dc-icon-3" className="absolute bottom-32 right-0" />
-				<span className="bg-light-red absolute right-36 top-40 -z-10 h-[400px] w-[400px] rounded-full" />
+				<span className="absolute right-36 top-40 -z-10 h-[400px] w-[400px] rounded-full bg-light-red" />
 				<article
 					ref={ref}
-					className="border-teal text-dark-gray absolute -left-10 bottom-20 z-20 flex h-[115px] w-[270px] flex-col items-center justify-center gap-2 rounded-lg border-t-4 bg-white p-5 text-center shadow-lg"
+					className="absolute -left-10 bottom-20 z-20 flex h-[115px] w-[270px] flex-col items-center justify-center gap-2 rounded-lg border-t-4 border-teal bg-white p-5 text-center text-dark-gray shadow-lg"
 				>
-					<h2 className="text-teal text-5xl">
+					<h2 className="text-5xl text-teal">
 						<CountUp start={0} end={24} delay={0.5} duration={1.5}>
 							{({ countUpRef, start }) => {
 								if (inView) {
@@ -74,9 +74,9 @@ export function Welcome() {
 				</article>
 				<article
 					ref={ref}
-					className="border-gold text-dark-gray absolute right-0 top-52 z-20 flex h-[115px] w-[270px] flex-col items-center justify-center gap-2 rounded-lg border-t-4 bg-white p-5 text-center shadow-lg"
+					className="absolute right-0 top-52 z-20 flex h-[115px] w-[270px] flex-col items-center justify-center gap-2 rounded-lg border-t-4 border-gold bg-white p-5 text-center text-dark-gray shadow-lg"
 				>
-					<h2 className="text-gold text-5xl">
+					<h2 className="text-5xl text-gold">
 						<CountUp start={0} end={129} delay={0.5} duration={1.5}>
 							{({ countUpRef, start }) => {
 								if (inView) {
