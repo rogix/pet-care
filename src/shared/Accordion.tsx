@@ -12,12 +12,12 @@ export function AccordionItem({
 	defaultChecked = false
 }: AccordionItemProps) {
 	return (
-		<div className="collapse-arrow collapse">
+		<div className="collapse collapse-arrow">
 			<input type="radio" name={name} defaultChecked={defaultChecked} />
-			<div className="collapse-title text-dark-gray bg-off-white border-b-light-red mb-5 rounded-md border-b-2 text-xl font-medium">
+			<div className="collapse-title mb-5 rounded-lg rounded-b-2xl border-b-4 border-b-light-red bg-off-white text-xl font-medium text-dark-gray">
 				{title}
 			</div>
-			<div className="collapse-content font-readex text-sm font-extralight text-gray-500">
+			<div className="text-gray-500 collapse-content font-readex text-sm font-extralight">
 				<p>{content}</p>
 			</div>
 		</div>

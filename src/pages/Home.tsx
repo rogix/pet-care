@@ -5,6 +5,7 @@ import { Header } from '../components/Header';
 import { Hero } from '../components/Hero';
 import { Numbers } from '../components/Numbers';
 import { ProductsList } from '../components/ProductsList';
+import { Questions } from '../components/Questions';
 import { ServicesSection } from '../components/Services';
 import { Testimonials } from '../components/Testimonials';
 import { Welcome } from '../components/Welcome';
@@ -22,6 +23,7 @@ export function Home() {
 			<Numbers />
 			<Experts />
 			<Feline />
+			<Questions />
 		</div>
 	);
 }
