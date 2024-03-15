@@ -13,8 +13,11 @@ import {
 	createRoutesFromElements
 } from 'react-router-dom';
 import { Home } from './pages/Home.tsx';
+import { Page404 } from './pages/ErrorPage.tsx';
 
-const router = createBrowserRouter(createRoutesFromElements(<Route path="/" element={<Home />} />));
+const router = createBrowserRouter(
+	createRoutesFromElements(<Route path="/" element={<Home />} errorElement={<Page404 />} />)
+);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
 	<React.StrictMode>
