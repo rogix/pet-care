@@ -10,7 +10,7 @@ import { Typography } from '../shared/Typography';
 
 export function Experts() {
 	return (
-		<section className="container py-28">
+		<section className="container max-w-[500px] py-28 md:max-w-screen-2xl md:px-20">
 			<div className="mx-auto max-w-[800px]">
 				<Typography variant="h2" className="mb-10 text-center text-teal">
 					Meet Our Experts
@@ -21,7 +21,7 @@ export function Experts() {
 			</div>
 			<section className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
 				<div>
-					<img src={Expert1} alt="expert-1" />
+					<img src={Expert1} alt="expert-1" className="mx-auto w-[70%] md:w-auto" />
 					<Typography variant="h3" className="mt-5 text-center text-xl">
 						Mark Davis
 					</Typography>
@@ -35,7 +35,7 @@ export function Experts() {
 					</div>
 				</div>
 				<div>
-					<img src={Expert2} alt="expert-2" />
+					<img src={Expert2} alt="expert-2" className="mx-auto w-[70%] md:w-auto" />
 					<Typography variant="h3" className="mt-5 text-center text-xl">
 						Anna Smith
 					</Typography>
@@ -49,7 +49,7 @@ export function Experts() {
 					</div>
 				</div>
 				<div>
-					<img src={Expert3} alt="expert-3" />
+					<img src={Expert3} alt="expert-3" className="mx-auto w-[70%] md:w-auto" />
 					<Typography variant="h3" className="mt-5 text-center text-xl">
 						Alex Johnson
 					</Typography>
@@ -63,7 +63,7 @@ export function Experts() {
 					</div>
 				</div>
 				<div>
-					<img src={Expert4} alt="expert-4" />
+					<img src={Expert4} alt="expert-4" className="mx-auto w-[70%] md:w-auto" />
 					<Typography variant="h3" className="mt-5 text-center text-xl">
 						Emily Clark
 					</Typography>
