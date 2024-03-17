@@ -3,17 +3,12 @@ import DogCat from '../assets/dog-cat.png';
 import DCIcon1 from '../assets/dc-icon-1.png';
 import DCIcon2 from '../assets/dc-icon-2.png';
 import DCIcon3 from '../assets/dc-icon-3.png';
-import CountUp from 'react-countup';
-import { useInView } from 'react-intersection-observer';
+import CountUpComponent from '../shared/CountUp';
 
 export function Welcome() {
-	const { ref, inView } = useInView({
-		triggerOnce: true
-	});
-
 	return (
-		<section className="container flex justify-between gap-10">
-			<div className="mb-20 mt-40 flex flex-col gap-7 lg:w-[40%]">
+		<section className="container flex max-w-[500px] justify-between gap-10 md:max-w-screen-2xl md:px-20">
+			<div className="mb-20 flex flex-col gap-7 lg:px-40 2xl:w-[40%] 2xl:px-0">
 				<article className="flex flex-col gap-7">
 					<h2 className="font-readex text-teal">Welcome to Buddy Pet Care</h2>
 					<h3 className="text-5xl text-dark-gray">Your Trusted Partner in Pet Wellness</h3>
@@ -41,7 +36,7 @@ export function Welcome() {
 					/>
 				</div>
 			</div>
-			<div className="relative hidden w-[50%] lg:block">
+			<div className="relative hidden w-[700px] 2xl:block">
 				<img
 					src={DogCat}
 					alt="dog-cat"
@@ -54,38 +49,16 @@ export function Welcome() {
 					className="absolute left-1/2 top-10 -translate-x-3/4 transform"
 				/>
 				<img src={DCIcon3} alt="dc-icon-3" className="absolute bottom-32 right-0" />
-				<span className="absolute right-64 top-40 -z-10 h-[400px] w-[400px] rounded-full bg-light-red" />
-				<article
-					ref={ref}
-					className="absolute -left-10 bottom-20 z-20 flex h-[115px] w-[270px] flex-col items-center justify-center gap-2 rounded-lg border-t-4 border-teal bg-white p-5 text-center text-dark-gray shadow-lg"
-				>
-					<h2 className="text-5xl text-teal">
-						<CountUp start={0} end={24} delay={0.5} duration={1.5}>
-							{({ countUpRef, start }) => {
-								if (inView) {
-									start();
-								}
-								return <span ref={countUpRef} />;
-							}}
-						</CountUp>
-						+
+				<span className="absolute right-48 top-40 -z-10 h-[400px] w-[400px] rounded-full bg-light-red" />
+				<article className="absolute -left-10 bottom-20 z-20 flex h-[115px] w-[270px] flex-col items-center justify-center gap-2 rounded-lg border-t-4 border-teal bg-white p-5 text-center text-dark-gray shadow-lg">
+					<h2 className="flex text-5xl text-teal">
+						<CountUpComponent start={0} end={24} delay={0.5} duration={1.5} />+
 					</h2>
 					<p className="text-base">Trusted Partners</p>
 				</article>
-				<article
-					ref={ref}
-					className="absolute right-0 top-52 z-20 flex h-[115px] w-[270px] flex-col items-center justify-center gap-2 rounded-lg border-t-4 border-gold bg-white p-5 text-center text-dark-gray shadow-lg"
-				>
-					<h2 className="text-5xl text-gold">
-						<CountUp start={0} end={129} delay={0.5} duration={1.5}>
-							{({ countUpRef, start }) => {
-								if (inView) {
-									start();
-								}
-								return <span ref={countUpRef} />;
-							}}
-						</CountUp>
-						k
+				<article className="absolute right-10 top-56 z-20 flex h-[115px] w-[270px] flex-col items-center justify-center gap-2 rounded-lg border-t-4 border-gold bg-white p-5 text-center text-dark-gray shadow-lg">
+					<h2 className="flex text-5xl text-gold">
+						<CountUpComponent start={0} end={129} delay={0.5} duration={1.5} />k
 					</h2>
 					<p className="text-base">Experience Field</p>
 				</article>
