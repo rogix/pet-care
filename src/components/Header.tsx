@@ -3,9 +3,9 @@ import Phone from '../assets/telephone.png';
 
 export function Header() {
 	return (
-		<header className="h-28 bg-[#FFF9F1] p-4 text-base text-[#4d4d4d]">
+		<header className="h-28 bg-[#FFF9F1] py-4 text-base text-[#4d4d4d]">
 			<nav className="mx-auto flex max-w-[1300px] items-center justify-between">
-				<div className="navbar bg-base-100">
+				<div className="navbar bg-base-100 px-0">
 					<div className="navbar-start">
 						<div className="dropdown">
 							<div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -61,7 +61,7 @@ export function Header() {
 							</ul>
 						</div>
 						<a className="btn btn-ghost text-xl" href="/">
-							<img src={Logo} alt="logo" className="w-[100px] md:w-[210px]" />
+							<img src={Logo} alt="logo" className="w-[100px] lg:w-[210px]" />
 						</a>
 					</div>
 					<div className="navbar-center hidden lg:flex">
@@ -99,7 +99,7 @@ export function Header() {
 						</ul>
 					</div>
 					<div className="navbar-end hidden sm:block">
-						<div className="flex items-center justify-end gap-3">
+						<div className="mr-10 flex items-center justify-end gap-3">
 							<img src={Phone} alt="phone" height="auto" />
 							<div className="flex flex-col text-base">
 								<span>Contact Us</span>
