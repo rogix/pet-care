@@ -5,7 +5,7 @@ import SafeIcon from '../assets/safe-and-love-icon.png';
 
 export function ProductsList() {
 	return (
-		<section className="container my-20 grid grid-cols-1  gap-7 md:grid-cols-4">
+		<section className="container my-20 grid max-w-[500px] grid-cols-1 gap-7 sm:px-0 md:max-w-screen-2xl md:grid-cols-2 md:px-20 xl:grid-cols-4">
 			<article className="flex flex-col items-center justify-center gap-5 rounded-lg border-t-4 border-teal p-5 text-center text-dark-gray shadow-lg">
 				<img src={CertifiedIcon} alt="certified" />
 				<h2 className="text-2xl">Certified Professionals</h2>
