@@ -34,11 +34,11 @@ export function Questions() {
 						name="my-accordion-3"
 					/>
 				</div>
-				<div className="bottom-0 right-0 h-[607px] rounded-t-lg bg-orange md:right-20 xl:absolute xl:w-[570px]">
+				<div className="bottom-0 right-0 h-[607px] rounded-t-lg bg-orange p-5 md:right-20 xl:absolute xl:w-[570px]">
 					<h2 className="mx-auto max-w-[400px] py-10 text-center text-2xl text-white">
 						Have a question? Ask contact support now.
 					</h2>
-					<form className="mx-auto flex flex-col gap-5 p-10 pt-0 md:w-[570px]">
+					<form className="mx-auto flex flex-col gap-5 pt-0 md:w-[570px] xl:px-10">
 						<input type="text" placeholder="Name" className="w-full rounded-full px-5 py-5" />
 						<input type="email" placeholder="Email" className="w-full rounded-full p-5 px-5" />
 						<textarea placeholder="Any Question" rows={6} className="rounded-[30px] p-5" />
