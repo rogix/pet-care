@@ -5,7 +5,7 @@ import Blog3 from '../assets/blog-3.jpeg';
 
 export function BlogSection() {
 	return (
-		<section className="container my-20">
+		<section className="container my-20 md:px-20">
 			<div className="my-10 flex flex-col items-center justify-center gap-6">
 				<Typography variant="h2">Our Blog</Typography>
 				<Typography
@@ -15,7 +15,7 @@ export function BlogSection() {
 					Exploring the Latest Trends in Pet lovers
 				</Typography>
 			</div>
-			<section className="grid grid-cols-1  gap-10 md:grid-cols-3">
+			<section className="grid grid-cols-1  gap-10 lg:grid-cols-3">
 				<article className="rounded-md bg-off-white">
 					<div>
 						<img src={Blog1} alt="Blog post" className="rounded-t-md" />
