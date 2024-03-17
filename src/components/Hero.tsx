@@ -4,9 +4,9 @@ import CustomButton from '../shared/Button';
 
 export function Hero() {
 	return (
-		<section className="flex h-[calc(100vh-112px)] items-center bg-off-white">
-			<div className="mx-auto flex w-[1200px] items-center gap-10">
-				<div className="relative hidden w-[600px] lg:block">
+		<section className="flex items-center bg-off-white lg:h-[calc(100vh-112px)]">
+			<div className="mx-auto flex w-[1200px] items-center gap-10 xl:mx-0 2xl:mx-auto">
+				<div className="relative hidden lg:block lg:w-[400px] xl:w-[600px]">
 					<img src={Line} alt="hero" className="relative h-auto w-full object-contain" />
 					<img
 						src={Dog}
@@ -14,9 +14,9 @@ export function Hero() {
 						className="absolute left-10 top-10 h-auto w-[90%] object-contain"
 					/>
 				</div>
-				<article className="flex h-[440px] flex-col justify-center p-5 md:p-0">
+				<article className="mx-auto flex h-[440px] max-w-[500px] flex-col justify-center p-5 md:my-20 lg:mx-0 lg:p-0">
 					<h2 className="font-readex text-lg font-bold text-teal">Happy Pets, Happy Hearts</h2>
-					<div className="mb-6 text-left text-4xl font-bold capitalize leading-relaxed text-dark-gray md:w-[590px] md:text-7xl">
+					<div className="mb-6 text-left text-4xl font-bold capitalize leading-tight text-dark-gray md:text-7xl lg:w-[590px] lg:leading-snug">
 						Loving <span className="text-orange">pet caring</span> partners
 					</div>
 					<p className="max-w-96 font-readex text-sm text-gray">
