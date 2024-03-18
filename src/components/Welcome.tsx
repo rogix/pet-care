@@ -4,8 +4,20 @@ import DCIcon1 from '../assets/dc-icon-1.png';
 import DCIcon2 from '../assets/dc-icon-2.png';
 import DCIcon3 from '../assets/dc-icon-3.png';
 import CountUpComponent from '../shared/CountUp';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import { useEffect } from 'react';
 
 export function Welcome() {
+	const controls = useAnimation();
+	const { ref, inView } = useInView();
+
+	useEffect(() => {
+		if (inView) {
+			controls.start('visible');
+		}
+	}, [controls, inView]);
+
 	return (
 		<section className="container flex max-w-[500px] justify-between gap-10 md:max-w-screen-2xl md:px-20">
 			<div className="mb-20 flex flex-col gap-7 lg:px-40 2xl:w-[40%] 2xl:px-0">
@@ -50,18 +62,38 @@ export function Welcome() {
 				/>
 				<img src={DCIcon3} alt="dc-icon-3" className="absolute bottom-32 right-0" />
 				<span className="absolute right-48 top-40 -z-10 h-[400px] w-[400px] rounded-full bg-light-red" />
-				<article className="absolute -left-10 bottom-20 z-20 flex h-[115px] w-[270px] flex-col items-center justify-center gap-2 rounded-lg border-t-4 border-teal bg-white p-5 text-center text-dark-gray shadow-lg">
-					<h2 className="flex text-5xl text-teal">
+				<motion.article
+					ref={ref}
+					initial="hidden"
+					animate={controls}
+					variants={{
+						visible: { y: 0, opacity: 1 },
+						hidden: { y: 100, opacity: 0 }
+					}}
+					transition={{ delay: 0.2, duration: 0.8, ease: 'easeInOut' }}
+					className="absolute -left-10 bottom-20 z-20 flex h-[115px] w-[270px] flex-col items-center justify-center gap-2 rounded-lg border-t-4 border-teal bg-white p-5 text-center text-dark-gray shadow-lg"
+				>
+					<h2 className="flex text-5xl text-teal" ref={ref}>
 						<CountUpComponent start={0} end={24} delay={0.5} duration={1.5} />+
 					</h2>
 					<p className="text-base">Trusted Partners</p>
-				</article>
-				<article className="absolute right-10 top-56 z-20 flex h-[115px] w-[270px] flex-col items-center justify-center gap-2 rounded-lg border-t-4 border-gold bg-white p-5 text-center text-dark-gray shadow-lg">
+				</motion.article>
+				<motion.article
+					ref={ref}
+					initial="hidden"
+					animate={controls}
+					variants={{
+						visible: { y: 0, opacity: 1 },
+						hidden: { y: 100, opacity: 0 }
+					}}
+					transition={{ delay: 0.2, duration: 0.8, ease: 'easeInOut' }}
+					className="absolute right-10 top-56 z-20 flex h-[115px] w-[270px] flex-col items-center justify-center gap-2 rounded-lg border-t-4 border-gold bg-white p-5 text-center text-dark-gray shadow-lg"
+				>
 					<h2 className="flex text-5xl text-gold">
 						<CountUpComponent start={0} end={129} delay={0.5} duration={1.5} />k
 					</h2>
 					<p className="text-base">Experience Field</p>
-				</article>
+				</motion.article>
 			</div>
 		</section>
 	);

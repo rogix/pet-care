@@ -1,5 +1,6 @@
 import React from 'react';
 import Arrow from '../assets/arrow-right.png';
+import { motion } from 'framer-motion';
 
 interface ButtonProps {
 	text: string;
@@ -7,10 +8,15 @@ interface ButtonProps {
 
 const CustomButton: React.FC<ButtonProps> = ({ text }) => {
 	return (
-		<button className="bg-light-red font-readex mt-6 flex h-[52px] w-[210px] items-center justify-center rounded-full px-6 py-2 text-base text-white">
+		<motion.button
+			whileHover={{ scale: 1.1 }}
+			whileTap={{ scale: 0.9 }}
+			transition={{ duration: 0.3 }}
+			className="mt-6 flex h-[52px] w-[210px] items-center justify-center rounded-full bg-light-red px-6 py-2 font-readex text-base text-white"
+		>
 			{text}
 			<img src={Arrow} alt={text} className="ml-2" />
-		</button>
+		</motion.button>
 	);
 };
 
