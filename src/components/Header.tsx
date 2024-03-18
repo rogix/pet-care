@@ -60,7 +60,7 @@ export function Header() {
 								</li>
 							</ul>
 						</div>
-						<a className="btn btn-ghost text-xl" href="/">
+						<a className="btn btn-ghost text-xl lg:mb-10" href="/">
 							<img src={Logo} alt="logo" className="w-[100px] lg:w-[210px]" />
 						</a>
 					</div>
