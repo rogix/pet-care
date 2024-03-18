@@ -7,7 +7,6 @@ const routes = [
 	{ path: '/about', name: 'About Us' },
 	{ path: '/services', name: 'Services' },
 	{ path: '/blog', name: 'Blog' },
-	{ path: '/contact', name: 'Contact Us' },
 	{ path: '/404', name: '404' }
 ];
 
