@@ -26,7 +26,7 @@ export function Home() {
 			<Experts />
 			<Feline />
 			<Questions />
-			<BlogSection />
+			<BlogSection totalPosts={3} />
 			<Footer />
 		</div>
 	);

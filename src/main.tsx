@@ -17,6 +17,7 @@ import { Page404 } from './pages/ErrorPage.tsx';
 import { AboutUs } from './pages/AboutUs.tsx';
 import { Root } from './pages/Root.tsx';
 import { Services } from './pages/Services.tsx';
+import { Blog } from './pages/Blog.tsx';
 
 const router = createBrowserRouter(
 	createRoutesFromElements(
@@ -25,6 +26,7 @@ const router = createBrowserRouter(
 				<Route index element={<Home />} />
 				<Route path="about" element={<AboutUs />} />
 				<Route path="services" element={<Services />} />
+				<Route path="blog" element={<Blog />} />
 			</Route>
 		</Route>
 	)
