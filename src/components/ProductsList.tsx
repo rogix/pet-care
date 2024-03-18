@@ -29,7 +29,8 @@ export function ProductsList() {
 						hidden: { y: 100, opacity: 0 }
 					}}
 					transition={{ delay: index * 0.1, duration: 0.8, ease: 'easeInOut' }}
-					className={`flex flex-col items-center justify-center gap-5 rounded-lg border-t-4 border-${product.color} p-5 text-center text-dark-gray shadow-lg`}
+					className={`flex flex-col items-center justify-center gap-5 rounded-lg border-t-4  p-5 text-center text-dark-gray shadow-lg`}
+					style={{ borderColor: product.color }}
 				>
 					<img src={product.imgSrc} alt={product.imgAlt} />
 					<h2 className="text-2xl">{product.title}</h2>
@@ -59,7 +60,7 @@ const products = [
 	{
 		imgSrc: VetIcon,
 		imgAlt: 'vet',
-		color: 'light-red',
+		color: '#F27C86',
 		title: 'Vet-Recommended',
 		content: 'Our services are recommended by vets, ensuring that your pets are in good hands.'
 	},

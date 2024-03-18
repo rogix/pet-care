@@ -19,6 +19,7 @@ export default {
         'gold': '#F7BA57',
         'orange': '#FF9315',
         'light-red': '#F27C86',
+        'rose': '#F27C86',
       },
     },  
     screens: {

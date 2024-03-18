@@ -36,7 +36,7 @@ export function ServicesSection() {
 					altText="playful"
 					title="Playful Activities"
 					content="We offer playful activities for your pets to ensure that they are happy and healthy."
-					color="light-red"
+					color="gold"
 				/>
 				<Card
 					image={NutritionIcon}
@@ -50,7 +50,7 @@ export function ServicesSection() {
 					altText="training"
 					title="Training Programs"
 					content="We offer training programs for your pets to ensure that they are well-behaved and happy."
-					color="light-red"
+					color="gold"
 				/>
 				<Card
 					image={SafeIcon}
