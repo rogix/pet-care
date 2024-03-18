@@ -1,5 +1,15 @@
 import Logo from '../assets/logo.png';
 import Phone from '../assets/telephone.png';
+import { NavLink } from 'react-router-dom';
+
+const routes = [
+	{ path: '/', name: 'Homepage' },
+	{ path: '/about', name: 'About Us' },
+	{ path: '/services', name: 'Services' },
+	{ path: '/blog', name: 'Blog' },
+	{ path: '/contact', name: 'Contact Us' },
+	{ path: '/404', name: '404' }
+];
 
 export function Header() {
 	return (
@@ -28,36 +38,18 @@ export function Header() {
 								tabIndex={0}
 								className="menu dropdown-content menu-sm z-[1] mt-3 w-52 rounded-box  bg-white p-2 shadow"
 							>
-								<li>
-									<a href="/" className="text-light-red">
-										Homepage
-									</a>
-								</li>
-								<li>
-									<a href="/about" className="hover:text-light-red">
-										About Us
-									</a>
-								</li>
-								<li>
-									<a href="/contact" className="hover:text-light-red">
-										Service
-									</a>
-								</li>
-								<li>
-									<a href="/contact" className="hover:text-light-red">
-										Pages
-									</a>
-								</li>
-								<li>
-									<a href="/contact" className="hover:text-light-red">
-										Blog
-									</a>
-								</li>
-								<li>
-									<a href="/contact" className="hover:text-light-red">
-										Contact Us
-									</a>
-								</li>
+								{routes.map((route, index) => (
+									<li key={index}>
+										<NavLink
+											to={route.path}
+											className={({ isActive }) =>
+												isActive ? 'text-light-red' : 'text-dark-gray hover:text-light-red'
+											}
+										>
+											{route.name}
+										</NavLink>
+									</li>
+								))}
 							</ul>
 						</div>
 						<a className="btn btn-ghost text-xl lg:mb-10" href="/">
@@ -66,36 +58,18 @@ export function Header() {
 					</div>
 					<div className="navbar-center hidden lg:flex">
 						<ul className="menu menu-horizontal mt-5 px-1">
-							<li>
-								<a href="/" className="text-light-red">
-									Homepage
-								</a>
-							</li>
-							<li>
-								<a href="/about" className="hover:text-light-red">
-									About Us
-								</a>
-							</li>
-							<li>
-								<a href="/contact" className="hover:text-light-red">
-									Service
-								</a>
-							</li>
-							<li>
-								<a href="/contact" className="hover:text-light-red">
-									Pages
-								</a>
-							</li>
-							<li>
-								<a href="/contact" className="hover:text-light-red">
-									Blog
-								</a>
-							</li>
-							<li>
-								<a href="/contact" className="hover:text-light-red">
-									Contact Us
-								</a>
-							</li>
+							{routes.map((route, index) => (
+								<li key={index}>
+									<NavLink
+										to={route.path}
+										className={({ isActive }) =>
+											isActive ? 'text-light-red' : 'text-dark-gray hover:text-light-red'
+										}
+									>
+										{route.name}
+									</NavLink>
+								</li>
+							))}
 						</ul>
 					</div>
 					<div className="navbar-end hidden sm:block">

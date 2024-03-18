@@ -9,7 +9,6 @@ import './index.css';
 import {
 	Route,
 	RouterProvider,
-	Routes,
 	createBrowserRouter,
 	createRoutesFromElements
 } from 'react-router-dom';
@@ -17,12 +16,16 @@ import { Home } from './pages/Home.tsx';
 import { Page404 } from './pages/ErrorPage.tsx';
 import { AboutUs } from './pages/AboutUs.tsx';
 import { Root } from './pages/Root.tsx';
+import { Services } from './pages/Services.tsx';
 
 const router = createBrowserRouter(
 	createRoutesFromElements(
 		<Route path="/" element={<Root />} errorElement={<Page404 />}>
-			<Route index element={<Home />} />
-			<Route path="about" element={<AboutUs />} />
+			<Route errorElement={<Page404 />}>
+				<Route index element={<Home />} />
+				<Route path="about" element={<AboutUs />} />
+				<Route path="services" element={<Services />} />
+			</Route>
 		</Route>
 	)
 );
